@@ -14,8 +14,8 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Past;
 
 import org.hibernate.validator.constraints.Length;
-import org.springframework.boot.autoconfigure.batch.BatchProperties.Job;
 
+import acme.entities.jobs.Job;
 import acme.entities.roles.Worker;
 import acme.framework.entities.DomainEntity;
 import lombok.Getter;

@@ -1,7 +1,7 @@
 
 package acme.entities.descriptors;
 
-import java.util.List;
+import java.util.Collection;
 
 import javax.persistence.Entity;
 import javax.persistence.OneToMany;
@@ -26,7 +26,7 @@ public class Descriptor extends DomainEntity {
 
 	@NotNull
 	@Valid
-	@OneToMany(mappedBy = "descriptor")
-	private List<Duty>			duties;
+	@OneToMany
+	private Collection<Duty>	duties;
 
 }
