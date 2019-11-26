@@ -78,6 +78,11 @@ master.menu.employer.list-jobs-mine = Mis trabajos
 master.menu.consumer = Consumidor
 master.menu.consumer.create-offer = Crear oferta
 
+# master.menu.worker ##########################################################
+
+master.menu.worker = Trabajador
+master.menu.worker.list-applications-mine = Mis aplicaciones
+
 # master.menu.user-account ####################################################
 
 master.menu.user-account = Cuenta

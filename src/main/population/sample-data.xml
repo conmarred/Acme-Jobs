@@ -460,7 +460,7 @@
 		<property name= "status" value= "ACCEPTED"/>
 		<property name= "statement" value= "This is an application"/>
 		<property name= "skills" value= "Voleitas"/>
-		<property name= "qualifications" value= "Un golaso"/>
+		<property name= "qualifications" value= "I am very good in computer science"/>
 		<property name="job" ref="job01"/>
 		<property name="worker" ref="worker01"/>
 	</bean>
@@ -471,7 +471,7 @@
 		<property name= "status" value= "PENDING"/>
 		<property name= "statement" value= "This is an application molona"/>
 		<property name= "skills" value= "Rabona"/>
-		<property name= "qualifications" value= "Amazing rabon"/>
+		<property name= "qualifications" value= "Amazing qualifications"/>
 		<property name="job" ref="job01"/>
 		<property name="worker" ref="worker01"/>
 	</bean>

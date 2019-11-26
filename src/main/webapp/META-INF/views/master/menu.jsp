@@ -57,13 +57,17 @@
 		<acme:menu-option code="master.menu.provider" access="hasRole('Provider')">
 			<acme:menu-suboption code="master.menu.provider.create-request" action="/provider/request/create"/>
 		</acme:menu-option>
+
+		<acme:menu-option code="master.menu.consumer" access="hasRole('Consumer')">
+			<acme:menu-suboption code="master.menu.consumer.create-offer" action="/consumer/offer/create"/>
+		</acme:menu-option>
 		
 		<acme:menu-option code="master.menu.employer" access="hasRole('Employer')">
 			<acme:menu-suboption code="master.menu.employer.list-jobs-mine" action="/employer/job/list-mine"/>
 		</acme:menu-option>
-
-		<acme:menu-option code="master.menu.consumer" access="hasRole('Consumer')">
-			<acme:menu-suboption code="master.menu.consumer.create-offer" action="/consumer/offer/create"/>
+		
+		<acme:menu-option code="master.menu.worker" access="hasRole('Worker')">
+			<acme:menu-suboption code="master.menu.worker.list-applications-mine" action="/worker/application/list-mine"/>
 		</acme:menu-option>
 	</acme:menu-left>
 
