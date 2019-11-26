@@ -73,6 +73,7 @@
 		<property name="userAccount" ref="administratorUserAccount" />
 	</bean>
 	
+		
 		<!-- Customisation Parameters -->
 	
 	<bean id= "spam01" class= "acme.entities.spams.Spam">

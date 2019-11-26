@@ -1,4 +1,4 @@
-# i18n_es.messages
+﻿# i18n_es.messages
 #
 # Copyright (c) 2019 Rafael Corchuelo.
 #
@@ -62,16 +62,28 @@ master.menu.authenticated.list-company-record = Compañías
 master.menu.authenticated.list-investor-records = Inversores
 master.menu.authenticated.list-challenge = Retos
 master.menu.authenticated.list-offer = Ofertas
+master.menu.authenticated.list-active-jobs = Trabajos
 
 # master.menu.provider ########################################################
 
 master.menu.provider = Proveedor
 master.menu.provider.create-request = Crear solicitud
 
+# master.menu.employer ##########################################################
+
+master.menu.employer = Empleador/a
+master.menu.employer.list-jobs-mine = Mis trabajos
+master.menu.employer.list-applications-mine = Aplicaciones hechas a mis trabajos
+
 # master.menu.consumer ##########################################################
 
 master.menu.consumer = Consumidor
 master.menu.consumer.create-offer = Crear oferta
+
+# master.menu.worker ##########################################################
+
+master.menu.worker = Trabajador
+master.menu.worker.list-applications-mine = Mis aplicaciones
 
 # master.menu.user-account ####################################################
 
