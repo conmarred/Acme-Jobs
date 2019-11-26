@@ -18,9 +18,6 @@ employer.job.form.label.link = Más imformación
 employer.job.form.panel.descriptor = Descriptor/a
 employer.job.form.panel.descriptor.description = Descripción
 employer.job.form.panel.descriptor.duties = Labor
-employer.job.form.label.descriptor.duties.title = Título
-employer.job.form.label.descriptor.duties.description = Descripción
-employer.job.form.label.descriptor.duties.time = Porcentaje de tiempo
 
 employer.job.form.button.return = Volver
 

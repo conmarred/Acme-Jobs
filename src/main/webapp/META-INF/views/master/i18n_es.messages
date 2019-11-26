@@ -73,6 +73,7 @@ master.menu.provider.create-request = Crear solicitud
 
 master.menu.employer = Empleador/a
 master.menu.employer.list-jobs-mine = Mis trabajos
+master.menu.employer.list-applications-mine = Aplicaciones hechas a mis trabajos
 
 # master.menu.consumer ##########################################################
 

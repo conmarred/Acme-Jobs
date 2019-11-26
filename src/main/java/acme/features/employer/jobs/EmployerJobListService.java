@@ -39,7 +39,7 @@ public class EmployerJobListService implements AbstractListService<Employer, Job
 	public Collection<Job> findMany(final Request<Job> request) {
 		assert request != null;
 
-		Collection<Job> res = this.repository.findMany(request.getPrincipal().getUsername());
+		Collection<Job> res = this.repository.findMany(request.getPrincipal().getActiveRoleId());
 		return res;
 	}
 

@@ -26,9 +26,10 @@
 		<acme:form-textbox code="authenticated.job.form.panel.descriptor.description" path="descriptor.description"/>
 		<jstl:forEach var="duty" items="${duties}">
 			<acme:form-panel code="authenticated.job.form.panel.descriptor.duties">
-				<acme:form-textbox code="authenticated.job.form.label.descriptor.duties.title" path="${duty.title}"/>
-				<acme:form-textarea code="authenticated.job.form.label.descriptor.duties.description" path="${duty.description}"/>
-				<acme:form-double code="authenticated.job.form.label.descriptor.duties.time" path="${duty.time}"/>
+				<acme:print value="${duty.title}"/> <br/>
+				<acme:print value="${duty.description}"/><br/>
+				<acme:print value="${duty.time}"/> % <br/>
+				<br/>
 			</acme:form-panel>
 		</jstl:forEach>
 	</acme:form-panel>
