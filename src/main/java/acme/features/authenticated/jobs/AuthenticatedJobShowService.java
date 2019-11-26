@@ -1,20 +1,20 @@
 
-package acme.features.employer.jobs;
+package acme.features.authenticated.jobs;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import acme.entities.jobs.Job;
-import acme.entities.roles.Employer;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
+import acme.framework.entities.Authenticated;
 import acme.framework.services.AbstractShowService;
 
 @Service
-public class EmployerJobShowService implements AbstractShowService<Employer, Job> {
+public class AuthenticatedJobShowService implements AbstractShowService<Authenticated, Job> {
 
 	@Autowired
-	EmployerJobRepository repository;
+	AuthenticatedJobRepository repository;
 
 
 	@Override
@@ -32,14 +32,19 @@ public class EmployerJobShowService implements AbstractShowService<Employer, Job
 
 		model.setAttribute("duties", entity.getDescriptor().getDuties());
 
-		request.unbind(entity, model, "reference", "status", "title", "deadline", "salary", "link", "descriptor.description");
+		request.unbind(entity, model, "reference", "title", "status", "deadline", "salary", "link", "descriptor.description");
+
 	}
 
 	@Override
 	public Job findOne(final Request<Job> request) {
 		assert request != null;
 
-		Job res = this.repository.findOne(request.getModel().getInteger("id"));
+		Job res;
+		int id;
+
+		id = request.getModel().getInteger("id");
+		res = this.repository.findOneJobById(id);
 		res.getEmployer().getUserAccount().getRoles().size();
 		res.getDescriptor().getDuties().size();
 

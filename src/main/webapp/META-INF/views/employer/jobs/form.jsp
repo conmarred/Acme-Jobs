@@ -26,7 +26,7 @@
 		<acme:form-textbox code="employer.job.form.panel.descriptor.description" path="descriptor.description"/>
 		<jstl:forEach var="duty" items="${duties}">
 			<acme:form-panel code="employer.job.form.panel.descriptor.duties">
-				<acme:form-option code="employer.job.form.label.descriptor.duties.title" value="${duty.title}"/>
+				<acme:form-textbox code="employer.job.form.label.descriptor.duties.title" path="${duty.title}"/>
 				<acme:form-textarea code="employer.job.form.label.descriptor.duties.description" path="${duty.description}"/>
 				<acme:form-double code="employer.job.form.label.descriptor.duties.time" path="${duty.time}"/>
 			</acme:form-panel>

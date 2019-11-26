@@ -52,6 +52,7 @@
 			<acme:menu-suboption code="master.menu.authenticated.list-company-record" action="/authenticated/company-record/list"/>
 			<acme:menu-suboption code="master.menu.authenticated.list-investor-records" action="/authenticated/investor-records/list"/>
 			<acme:menu-suboption code="master.menu.authenticated.list-challenge" action="/authenticated/challenge/list"/>
+			<acme:menu-suboption code="master.menu.authenticated.list-active-jobs" action="/authenticated/job/list"/>
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.provider" access="hasRole('Provider')">

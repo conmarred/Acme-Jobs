@@ -294,7 +294,7 @@ UserAccount
     </coordinates>
     <panel_attributes>lt=&lt;-&gt;
 m1=1
-m2=*
+m2=1..*
 has v</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;120.0</additional_attributes>
   </element>
@@ -687,7 +687,7 @@ Descriptor
     <panel_attributes>lt=&lt;-x
 m2=  0...*
 m1= 1
-publish &gt;</panel_attributes>
+&lt; registered by</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;80.0;270.0;80.0;270.0;120.0</additional_attributes>
   </element>
   <element>

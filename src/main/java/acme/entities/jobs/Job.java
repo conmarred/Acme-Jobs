@@ -46,8 +46,6 @@ public class Job extends DomainEntity {
 	@Temporal(TemporalType.TIMESTAMP)
 	private Date				deadline;
 
-	private boolean				active;
-
 	@Valid
 	@NotNull
 	private Money				salary;
