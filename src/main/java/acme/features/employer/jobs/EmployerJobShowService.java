@@ -40,9 +40,9 @@ public class EmployerJobShowService implements AbstractShowService<Employer, Job
 			model.setAttribute("active", false);
 		}
 
-		entity.getDescriptor().getDuties().size();
+		model.setAttribute("duties", entity.getDescriptor().getDuties());
 
-		request.unbind(entity, model, "reference", "status", "title", "deadline", "salary", "link", "descriptor.description", "descriptor.duties");
+		request.unbind(entity, model, "reference", "status", "title", "deadline", "salary", "link", "descriptor.description");
 	}
 
 	@Override
@@ -50,6 +50,9 @@ public class EmployerJobShowService implements AbstractShowService<Employer, Job
 		assert request != null;
 
 		Job res = this.repository.findOne(request.getModel().getInteger("id"));
+		res.getEmployer().getUserAccount().getRoles().size();
+		res.getDescriptor().getDuties().size();
+
 		return res;
 	}
 

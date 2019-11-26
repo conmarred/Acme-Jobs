@@ -360,5 +360,120 @@
 		<property name= "slogan" value= "The banner you wish"/>
 		<property name= "link" value= "https://www.google.es/"/>
 	</bean>
+	
+	<!-- Duties -->
+	
+	<bean id= "duty01" class= "acme.entities.duties.Duty">
+		<property name= "title" value= "This is a title"/>
+		<property name= "description" value= "This is a description"/>
+		<property name= "time" value= "50"/>
+	</bean>
+	
+	<bean id= "duty02" class= "acme.entities.duties.Duty">
+		<property name= "title" value= "This is a title2"/>
+		<property name= "description" value= "This is a description2"/>
+		<property name= "time" value= "60"/>
+	</bean>
+	
+	<!-- Employer -->
+	
+	<bean name="employerUserAccount02" class="acme.framework.entities.UserAccount">
+		<property name="username" value="employer02" />
+		<property name="password" value="employer" />
+		<property name="enabled" value="true" />
+		<property name="identity">
+			<bean class="acme.datatypes.UserIdentity">
+				<property name="name" value="Pablo" />
+				<property name="surname" value="Cubero" />
+				<property name="email" value="pablo.cubero@acme.com" />
+			</bean>
+		</property>
+		<property name="roles">
+			<list>
+				<ref bean="employer02" />
+			</list>
+		</property>
+	</bean>
+
+	<bean name="employer02" class="acme.entities.roles.Employer">
+		<property name="userAccount" ref="employerUserAccount02" />
+		<property name= "company" value= "US"/>
+		<property name= "sector" value= "Informática"/>
+	</bean>
+	
+	<!-- Descriptor -->
+	
+	<bean id= "descriptor01" class= "acme.entities.descriptors.Descriptor">
+		<property name= "description" value= "This is a description"/>
+		<property name= "duties">
+			<list>
+				<ref bean="duty01"/>
+				<ref bean="duty02"/>
+			</list>
+		</property>
+	</bean>
+	
+	<!-- Worker -->
+
+	<bean name="workerUserAccount" class="acme.framework.entities.UserAccount">
+		<property name="username" value="worker" />
+		<property name="password" value="worker" />
+		<property name="enabled" value="true" />
+		<property name="identity">
+			<bean class="acme.datatypes.UserIdentity">
+				<property name="name" value="David" />
+				<property name="surname" value="Walker" />
+				<property name="email" value="david.walker@acme.com" />
+			</bean>
+		</property>
+		<property name="roles">
+			<list>
+				<ref bean="worker01" />
+			</list>
+		</property>
+	</bean>
+
+	<bean name="worker01" class="acme.entities.roles.Worker">
+		<property name="userAccount" ref="workerUserAccount" />
+		<property name= "qualifications" value= "Un máquina"/>
+		<property name= "skills" value= "Teclea to rápido"/>
+	</bean>
+	
+	<!-- Jobs -->
+	
+	<bean id= "job01" class= "acme.entities.jobs.Job">
+		<property name= "reference" value= "ABDJTK"/>
+		<property name= "status" value= "DRAFT"/>
+		<property name= "title" value= "This is a job rechulon"/>
+		<property name= "deadline" value= "2020/01/01 12:00"/>
+		<property name= "salary" value= "2000 EUR"/>
+		<property name= "link" value= "https://www.google.es/"/>
+		<property name="descriptor" ref="descriptor01"/>
+		<property name="employer" ref="employer02"/>
+	</bean>
+	
+	<!-- Applications -->
+	
+	<bean id= "application01" class= "acme.entities.applications.Application">
+		<property name= "reference" value= "ABCD-HOLA"/>
+		<property name= "moment" value= "2019/08/16 12:00"/>
+		<property name= "status" value= "ACCEPTED"/>
+		<property name= "statement" value= "This is an application"/>
+		<property name= "skills" value= "Voleitas"/>
+		<property name= "qualifications" value= "Un golaso"/>
+		<property name="job" ref="job01"/>
+		<property name="worker" ref="worker01"/>
+	</bean>
+	
+	<bean id= "application02" class= "acme.entities.applications.Application">
+		<property name= "reference" value= "WRKS-NAGO"/>
+		<property name= "moment" value= "2019/05/02 20:07"/>
+		<property name= "status" value= "PENDING"/>
+		<property name= "statement" value= "This is an application molona"/>
+		<property name= "skills" value= "Rabona"/>
+		<property name= "qualifications" value= "Amazing rabon"/>
+		<property name="job" ref="job01"/>
+		<property name="worker" ref="worker01"/>
+	</bean>
 
 </beans>

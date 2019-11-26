@@ -13,7 +13,7 @@ import javax.validation.Valid;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 
-import org.hibernate.validator.constraints.Range;
+import org.hibernate.validator.constraints.Length;
 import org.hibernate.validator.constraints.URL;
 
 import acme.entities.descriptors.Descriptor;
@@ -31,7 +31,7 @@ public class Job extends DomainEntity {
 	private static final long	serialVersionUID	= 1L;
 
 	@NotBlank
-	@Range(min = 5, max = 10)
+	@Length(min = 5, max = 10)
 	@Column(unique = true)
 	private String				reference;
 

@@ -16,19 +16,19 @@
 <%@taglib prefix="acme" tagdir="/WEB-INF/tags"%>
 
 <acme:form>
-	<acme:form-textbox code="employer.job.form.label.title" path="reference"/>
-	<acme:form-moment code="employer.job.form.label.moment" path="status"/>
-	<acme:form-url code="employer.job.form.label.link" path="title"/>
-	<acme:form-textarea code="employer.job.form.label.description" path="deadline"/>
-	<acme:form-textarea code="employer.job.form.label.description" path="salary"/>
-	<acme:form-textarea code="employer.job.form.label.description" path="link"/>
+	<acme:form-textbox code="employer.job.form.label.title" path="title"/>
+	<acme:form-textbox code="employer.job.form.label.reference" path="reference"/>
+	<acme:form-textbox code="employer.job.form.label.status" path="status"/>
+	<acme:form-moment code="employer.job.form.label.deadline" path="deadline"/>
+	<acme:form-money code="employer.job.form.label.salary" path="salary"/>
+	<acme:form-url code="employer.job.form.label.link" path="link"/>
 	<acme:form-panel code="employer.job.form.panel.descriptor">
-		<acme:form-option code="employer.job.form.panel.descriptor" value="descriptor.description"/>
-		<jstl:forEach var="duty" items="descriptor.duties">
+		<acme:form-textbox code="employer.job.form.panel.descriptor.description" path="descriptor.description"/>
+		<jstl:forEach var="duty" items="${duties}">
 			<acme:form-panel code="employer.job.form.panel.descriptor.duties">
-				<acme:form-textbox code="employer.job.form.label.descriptor.duties.title" path="${duty.title}"/>
-				<acme:form-textbox code="employer.job.form.label.descriptor.duties.description" path="${duty.description}"/>
-				<acme:form-textbox code="employer.job.form.label.descriptor.duties.time" path="${duty.time}"/> %
+				<acme:form-option code="employer.job.form.label.descriptor.duties.title" value="${duty.title}"/>
+				<acme:form-textarea code="employer.job.form.label.descriptor.duties.description" path="${duty.description}"/>
+				<acme:form-double code="employer.job.form.label.descriptor.duties.time" path="${duty.time}"/>
 			</acme:form-panel>
 		</jstl:forEach>
 	</acme:form-panel>

@@ -8,12 +8,23 @@
 # purposes.  The copyright owner does not offer any warranties or representations, nor do
 # they accept any liabilities with respect to them.
 
-authenticated.announcement.list.label.moment = Momento
-authenticated.announcement.list.label.title = Título
+employer.job.form.label.title = Título
+employer.job.form.label.reference = Número de referencia
+employer.job.form.label.status = Estado
+employer.job.form.label.deadline = Fecha límite
+employer.job.form.label.salary = Sueldo
+employer.job.form.label.link = Más imformación
 
-authenticated.announcement.form.label.link = Enlace
-authenticated.announcement.form.label.description = Descripción
-authenticated.announcement.form.label.moment = Momento
-authenticated.announcement.form.label.title = Título
-authenticated.announcement.form.button.return = Volver
+employer.job.form.panel.descriptor = Descriptor/a
+employer.job.form.panel.descriptor.description = Descripción
+employer.job.form.panel.descriptor.duties = Labor
+employer.job.form.label.descriptor.duties.title = Título
+employer.job.form.label.descriptor.duties.description = Descripción
+employer.job.form.label.descriptor.duties.time = Porcentaje de tiempo
+
+employer.job.form.button.return = Volver
+
+employer.job.list.label.title = Título
+employer.job.list.label.deadline = Fecha límite
+employer.job.list.label.salary = Sueldo
 

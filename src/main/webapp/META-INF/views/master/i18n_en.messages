@@ -1,4 +1,4 @@
-# i18n_en.messages
+﻿# i18n_en.messages
 #
 # Copyright (c) 2019 Rafael Corchuelo.
 #
@@ -71,6 +71,11 @@ master.menu.provider.create-request = Create request
 
 master.menu.consumer = Consumer
 master.menu.consumer.create-offer = Create offer
+
+# master.menu.employer ##########################################################
+
+master.menu.employer = Employer
+master.menu.employer.list-jobs-mine = My jobs
 
 # master.menu.user-account ####################################################
 
