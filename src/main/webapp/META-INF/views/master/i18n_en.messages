@@ -68,6 +68,11 @@ master.menu.authenticated.list-active-jobs = Jobs
 master.menu.provider = Provider
 master.menu.provider.create-request = Create request
 
+# master.menu.auditor ########################################################
+
+master.menu.auditor = Auditor
+master.menu.auditor.list-jobs-write-auditor = Jobs (Written an auditor)
+
 # master.menu.consumer ##########################################################
 
 master.menu.consumer = Consumer
