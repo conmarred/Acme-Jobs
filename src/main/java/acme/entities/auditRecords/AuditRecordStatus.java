@@ -1,6 +1,6 @@
 
 package acme.entities.auditRecords;
 
-public enum AuditStatus {
+public enum AuditRecordStatus {
 	DRAFT, PUBLISHED;
 }

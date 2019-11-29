@@ -29,7 +29,7 @@ public class AuditRecord extends DomainEntity {
 	private String				title;
 
 	@NonNull
-	private AuditStatus			status;
+	private AuditRecordStatus			status;
 
 	@NonNull
 	@Temporal(TemporalType.TIMESTAMP)

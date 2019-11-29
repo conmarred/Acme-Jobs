@@ -20,7 +20,7 @@ auditor.jobs-write-auditors.form.panel.descriptor.description = Description
 auditor.jobs-write-auditors.form.panel.descriptor.duties = Duty
 
 auditor.jobs-write-auditors.form.button.return = Return
-auditor.jobs-write-auditors.form.button.list-audits = Audits of this job
+auditor.jobs-write-auditors.form.button.list-audits-job = Audits of this job
 
 auditor.jobs-write-auditors.list.label.title = Title
 auditor.jobs-write-auditors.list.label.deadline = Deadline

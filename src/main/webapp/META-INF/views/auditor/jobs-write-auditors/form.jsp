@@ -34,7 +34,6 @@
 		</jstl:forEach>
 	</acme:form-panel>
 	
-	<a href="/acme-jobs/auditor/audit-record/list?id=${id}" type="button"><acme:message code="auditor.jobs-write-auditors.form.button.list-audits"/></a> <br/><br/>
-<!--	<acme:form-submit code="auditor.jobs-write-auditors.form.button.list-audits" action="/auditor/audit/list"/> -->
+	<acme:form-submit code="auditor.jobs-write-auditors.form.button.list-audits-job" action="/auditor/audit-record/list-audits-job?id=${id}" method="get"/>
   	<acme:form-return code="auditor.jobs-write-auditors.form.button.return"/>
 </acme:form>

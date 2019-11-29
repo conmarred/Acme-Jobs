@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import acme.components.CustomCommand;
 import acme.entities.auditRecords.AuditRecord;
 import acme.entities.roles.Auditor;
 import acme.framework.components.BasicCommand;
@@ -25,7 +26,7 @@ public class AuditorAuditsOfAJobController extends AbstractController<Auditor, A
 
 	@PostConstruct
 	private void initialise() {
-		super.addBasicCommand(BasicCommand.LIST, this.listService);
+		super.addCustomCommand(CustomCommand.LIST_AUDITS_JOB, BasicCommand.LIST, this.listService);
 		super.addBasicCommand(BasicCommand.SHOW, this.showService);
 	}
 
