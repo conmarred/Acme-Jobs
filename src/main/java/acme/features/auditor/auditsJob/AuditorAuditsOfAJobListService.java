@@ -32,7 +32,7 @@ public class AuditorAuditsOfAJobListService implements AbstractListService<Audit
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "title", "status", "job.reference");
+		request.unbind(entity, model, "title", "moment");
 
 	}
 
@@ -40,7 +40,8 @@ public class AuditorAuditsOfAJobListService implements AbstractListService<Audit
 	public Collection<AuditRecord> findMany(final Request<AuditRecord> request) {
 		assert request != null;
 
-		Collection<AuditRecord> res = this.repository.findAuditsOfAJob(request.getModel().getInteger("id"));
+		Collection<AuditRecord> res = this.repository.findAuditsOfAJob(Integer.parseInt(request.getServletRequest().getParameter("id")));
+
 		return res;
 	}
 

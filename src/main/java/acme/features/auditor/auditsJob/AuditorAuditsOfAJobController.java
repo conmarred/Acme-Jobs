@@ -13,7 +13,7 @@ import acme.framework.components.BasicCommand;
 import acme.framework.controllers.AbstractController;
 
 @Controller
-@RequestMapping("/auditor/audit/")
+@RequestMapping("/auditor/audit-record/")
 public class AuditorAuditsOfAJobController extends AbstractController<Auditor, AuditRecord> {
 
 	@Autowired

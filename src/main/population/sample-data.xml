@@ -503,12 +503,6 @@
 		<property name= "link" value= "https://www.google.es/"/>
 		<property name="descriptor" ref="descriptor01"/>
 		<property name="employer" ref="employer02"/>
-		<property name="audits">
-			<list>
-				<ref bean="auditRecord01"/>
-				<ref bean="auditRecord02"/>
-			</list>
-		</property>
 	</bean>
 	
 	<bean id= "job02" class= "acme.entities.jobs.Job">
@@ -520,12 +514,6 @@
 		<property name= "link" value= "https://www.google.es/"/>
 		<property name="descriptor" ref="descriptor02"/>
 		<property name="employer" ref="employer02"/>
-		<property name="audits">
-			<list>
-				<ref bean="auditRecord03"/>
-				<ref bean="auditRecord04"/>
-			</list>
-		</property>
 	</bean>
 	
 	<bean id= "job03" class= "acme.entities.jobs.Job">
@@ -537,12 +525,6 @@
 		<property name= "link" value= "https://www.google.es/"/>
 		<property name="descriptor" ref="descriptor03"/>
 		<property name="employer" ref="employer02"/>
-		<property name="audits">
-			<list>
-				<ref bean="auditRecord05"/>
-				<ref bean="auditRecord06"/>
-			</list>
-		</property>
 	</bean>
 	
 	<!-- Applications -->

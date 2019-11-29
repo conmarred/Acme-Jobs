@@ -17,8 +17,8 @@
 <%@taglib prefix="acme" tagdir="/WEB-INF/tags"%>
 
 <acme:list readonly="false">
+<acme:list-column code="auditor.audits-of-a-job.list.label.moment" path="moment" width="20%"/>
 	<acme:list-column code="auditor.audits-of-a-job.list.label.title" path="title" width="20%"/>
-	<acme:list-column code="auditor.audits-of-a-job.list.label.moment" path="moment" width="20%"/>
 </acme:list>
 
 

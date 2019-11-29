@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import acme.entities.jobs.Job;
+import acme.entities.jobs.JobStatus;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
 import acme.framework.entities.Authenticated;
@@ -41,7 +42,7 @@ public class AuthenticatedJobListService implements AbstractListService<Authenti
 
 		Collection<Job> result;
 
-		result = this.repository.findActiveJobs();
+		result = this.repository.findActiveJobs(JobStatus.PUBLISHED);
 
 		return result;
 	}

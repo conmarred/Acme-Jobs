@@ -1,13 +1,11 @@
 
 package acme.entities.jobs;
 
-import java.util.Collection;
 import java.util.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.ManyToOne;
-import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
@@ -18,7 +16,6 @@ import javax.validation.constraints.NotNull;
 import org.hibernate.validator.constraints.Length;
 import org.hibernate.validator.constraints.URL;
 
-import acme.entities.auditRecords.AuditRecord;
 import acme.entities.descriptors.Descriptor;
 import acme.entities.roles.Employer;
 import acme.framework.datatypes.Money;
@@ -31,45 +28,40 @@ import lombok.Setter;
 @Setter
 public class Job extends DomainEntity {
 
-	private static final long				serialVersionUID	= 1L;
+	private static final long	serialVersionUID	= 1L;
 
 	@NotBlank
 	@Length(min = 5, max = 10)
 	@Column(unique = true)
-	private String							reference;
+	private String				reference;
 
 	@NotNull
-	@Valid
-	private JobStatus						status;
+	private JobStatus			status;
 
 	@NotBlank
-	private String							title;
+	private String				title;
 
 	@NotNull
 	@Temporal(TemporalType.TIMESTAMP)
-	private Date							deadline;
+	private Date				deadline;
 
 	@Valid
 	@NotNull
-	private Money							salary;
+	private Money				salary;
 
 	@URL
-	private String							link;
+	private String				link;
 
 	// Relationships ----------------------------------------------------------
 
 	@NotNull
 	@Valid
 	@OneToOne(optional = false)
-	private Descriptor						descriptor;
+	private Descriptor			descriptor;
 
 	@NotNull
 	@Valid
 	@ManyToOne(optional = false)
-	private Employer						employer;
-
-	@NotNull
-	@OneToMany(mappedBy = "job")
-	private Collection<@Valid AuditRecord>	audits;
+	private Employer			employer;
 
 }
