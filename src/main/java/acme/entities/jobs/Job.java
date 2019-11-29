@@ -36,7 +36,6 @@ public class Job extends DomainEntity {
 	private String				reference;
 
 	@NotNull
-	@Valid
 	private JobStatus			status;
 
 	@NotBlank

@@ -80,6 +80,11 @@ master.menu.employer.list-applications-mine = Aplicaciones hechas a mis trabajos
 master.menu.consumer = Consumidor
 master.menu.consumer.create-offer = Crear oferta
 
+# master.menu.auditor ########################################################
+
+master.menu.auditor = Auditor
+master.menu.auditor.list-jobs-write-auditor = Trabajos (Escrita una auditoría)
+
 # master.menu.worker ##########################################################
 
 master.menu.worker = Trabajador
