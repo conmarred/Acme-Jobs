@@ -63,6 +63,7 @@ master.menu.authenticated.list-investor-records = Inversores
 master.menu.authenticated.list-challenge = Retos
 master.menu.authenticated.list-offer = Ofertas
 master.menu.authenticated.list-active-jobs = Trabajos
+master.menu.authenticated.list-message-thread = Hilos (Involucrado)
 
 # master.menu.provider ########################################################
 

@@ -774,7 +774,7 @@
 		<property name="enabled" value="true" />
 		<property name="identity">
 			<bean class="acme.datatypes.UserIdentity">
-				<property name="name" value="Alenadro" />
+				<property name="name" value="Alejandro" />
 				<property name="surname" value="Manzano" />
 				<property name="email" value="alejandro.manzano@acme.com" />
 			</bean>
@@ -881,6 +881,44 @@
 		<property name= "job" ref= "job03"/>
 		<property name= "auditor" ref= "auditor01"/>
 	</bean> 
+  
+  <!-- Message threads -->
 	
+	<bean id="messageThread01" class="acme.entities.messageThreads.MessageThread">
+		<property name= "title" value= "Message thread"/>
+		<property name= "moment" value= "2019/04/10 14:00"/>
+		<property name= "users">
+			<list>
+				<ref bean="employerUserAccount01"/>
+				<ref bean="auditorUserAccount01"/>
+			</list>
+		</property>
+	</bean> 
+	
+	<!-- Messages -->
+	
+	<bean id="message01" class="acme.entities.messages.Message">
+		<property name= "title" value= "Message"/>
+		<property name= "moment" value= "2019/04/10 14:00"/>
+		<property name= "body" value= "This is a message from the coordinator."/>
+		<property name="tags"></property>
+		<property name= "messageThread" ref= "messageThread01"/>
+	</bean> 
+	
+	<bean id="message02" class="acme.entities.messages.Message">
+		<property name= "title" value= "Old message"/>
+		<property name= "moment" value= "2019/04/10 14:00"/>
+		<property name= "body" value= "This is a message from time ago."/>
+		<property name="tags"></property>
+		<property name= "messageThread" ref= "messageThread01"/>
+	</bean> 
+	
+	<bean id="message03" class="acme.entities.messages.Message">
+		<property name= "title" value= "New message"/>
+		<property name= "moment" value= "2019/04/10 14:00"/>
+		<property name= "body" value= "This is a message of a new application."/>
+		<property name="tags"></property>
+		<property name= "messageThread" ref= "messageThread01"/>
+	</bean>
 	
 </beans>
