@@ -869,7 +869,7 @@
 		<property name= "status" value= "DRAFT"/>
 		<property name= "moment" value= "2018/12/26 19:00"/>
 		<property name= "body" value= "This is a body5"/>
-		<property name= "job" ref= "job03"/>
+		<property name= "job" ref= "job07"/>
 		<property name= "auditor" ref= "auditor02"/>
 	</bean> 
 	
@@ -901,7 +901,6 @@
 		<property name= "title" value= "Message"/>
 		<property name= "moment" value= "2019/04/10 14:00"/>
 		<property name= "body" value= "This is a message from the coordinator."/>
-		<property name="tags"></property>
 		<property name= "messageThread" ref= "messageThread01"/>
 	</bean> 
 	
@@ -909,7 +908,6 @@
 		<property name= "title" value= "Old message"/>
 		<property name= "moment" value= "2019/04/10 14:00"/>
 		<property name= "body" value= "This is a message from time ago."/>
-		<property name="tags"></property>
 		<property name= "messageThread" ref= "messageThread01"/>
 	</bean> 
 	
@@ -917,7 +915,6 @@
 		<property name= "title" value= "New message"/>
 		<property name= "moment" value= "2019/04/10 14:00"/>
 		<property name= "body" value= "This is a message of a new application."/>
-		<property name="tags"></property>
 		<property name= "messageThread" ref= "messageThread01"/>
 	</bean>
 	

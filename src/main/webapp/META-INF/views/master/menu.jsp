@@ -75,6 +75,7 @@
 		
 		<acme:menu-option code="master.menu.auditor" access="hasRole('Auditor')">
 			<acme:menu-suboption code="master.menu.auditor.list-jobs-write-auditor" action="/auditor/job/list-jobs-write-auditor"/>
+			<acme:menu-suboption code="master.menu.auditor.list-non-jobs-write-auditor" action="/auditor/non-job/list-non-jobs-write-auditor"/>
 		</acme:menu-option>
 	</acme:menu-left>
 
