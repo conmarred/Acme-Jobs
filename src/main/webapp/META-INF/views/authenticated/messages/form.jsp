@@ -16,14 +16,9 @@
 <%@taglib prefix="acme" tagdir="/WEB-INF/tags"%>
 
 <acme:form>
-	<acme:form-textbox code="authenticated.message-threads.form.label.title" path="title"/>
-	<acme:form-moment code="authenticated.message-threads.form.label.moment" path="moment"/>
-	<acme:form-panel code="authenticated.message-threads.form.label.users">
-		<jstl:forEach var="user" items="${usersAccount}">
-			<acme:print value="${user.username}"/> <br/>
-		</jstl:forEach>
-	</acme:form-panel>
-	<br/>
-	<acme:form-submit code="authenticated.message-threads.form.button.messages" action="/authenticated/message/list?id=${id}" method="get"/>
+	<acme:form-textbox code="authenticated.message.form.label.title" path="title"/>
+	<acme:form-moment code="authenticated.message.form.label.moment" path="moment"/>
+	<acme:form-textarea code="authenticated.message.form.label.body" path="body"/>
+	
   	<acme:form-return code="authenticated.message-threads.form.button.return"/>
 </acme:form>

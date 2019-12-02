@@ -8,13 +8,12 @@
 # purposes.  The copyright owner does not offer any warranties or representations, nor do
 # they accept any liabilities with respect to them.
 
-authenticated.message-threads.form.label.title = Title
-authenticated.message-threads.form.label.moment = Moment
-authenticated.message-threads.form.label.users = Users
+authenticated.message.form.label.title = Title
+authenticated.message.form.label.moment = Moment
+authenticated.message.form.label.body = Body
 
-authenticated.message-threads.form.button.return = Return
-authenticated.message-threads.form.button.messages = Thread's messages
+authenticated.message.form.button.return = Return
 
-authenticated.message-threads.list.label.title = Title
-authenticated.message-threads.list.label.moment = Moment
+authenticated.message.list.label.title = Title
+authenticated.message.list.label.moment = Moment
 

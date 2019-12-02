@@ -30,7 +30,9 @@ public class AuthenticatedMessageThreadShowService implements AbstractShowServic
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "title", "moment");
+		model.setAttribute("usersAccount", entity.getUsers());
+
+		request.unbind(entity, model, "title", "moment", "id");
 
 	}
 
@@ -43,6 +45,8 @@ public class AuthenticatedMessageThreadShowService implements AbstractShowServic
 
 		id = request.getModel().getInteger("id");
 		res = this.repository.findOneMessageThreadById(id);
+		res.getUsers().size();
+		res.getUsers().forEach(x -> x.getRoles().size());
 
 		return res;
 	}

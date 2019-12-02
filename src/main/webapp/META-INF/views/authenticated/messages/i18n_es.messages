@@ -1,4 +1,4 @@
-# i18n_en.messages
+﻿# i18n_es.messages
 #
 # Copyright (c) 2019 Rafael Corchuelo.
 #
@@ -8,13 +8,11 @@
 # purposes.  The copyright owner does not offer any warranties or representations, nor do
 # they accept any liabilities with respect to them.
 
-authenticated.message-threads.form.label.title = Title
-authenticated.message-threads.form.label.moment = Moment
-authenticated.message-threads.form.label.users = Users
+authenticated.message.form.label.title = Título
+authenticated.message.form.label.moment = Momento
+authenticated.message.form.label.body = Cuerpo
 
-authenticated.message-threads.form.button.return = Return
-authenticated.message-threads.form.button.messages = Thread's messages
+authenticated.message.form.button.return = Volver
 
-authenticated.message-threads.list.label.title = Title
-authenticated.message-threads.list.label.moment = Moment
-
+authenticated.message.list.label.title = Título
+authenticated.message.list.label.moment = Momento

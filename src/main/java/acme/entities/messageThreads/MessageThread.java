@@ -5,7 +5,7 @@ import java.util.Collection;
 import java.util.Date;
 
 import javax.persistence.Entity;
-import javax.persistence.ManyToMany;
+import javax.persistence.OneToMany;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.validation.Valid;
@@ -24,9 +24,6 @@ import lombok.Setter;
 @Setter
 public class MessageThread extends DomainEntity {
 
-	/**
-	 *
-	 */
 	private static final long				serialVersionUID	= 1L;
 
 	@NotBlank
@@ -40,7 +37,7 @@ public class MessageThread extends DomainEntity {
 	// Relationships ----------------------------------------------------------
 
 	@NotEmpty
-	@ManyToMany
+	@OneToMany
 	private Collection<@Valid UserAccount>	users;
 
 }

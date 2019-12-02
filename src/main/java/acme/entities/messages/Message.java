@@ -1,7 +1,6 @@
 
 package acme.entities.messages;
 
-import java.util.Collection;
 import java.util.Date;
 
 import javax.persistence.Entity;
@@ -23,9 +22,6 @@ import lombok.Setter;
 @Setter
 public class Message extends DomainEntity {
 
-	/**
-	 *
-	 */
 	private static final long	serialVersionUID	= 1L;
 
 	@NotBlank
@@ -36,7 +32,7 @@ public class Message extends DomainEntity {
 	@Past
 	private Date				moment;
 
-	private Collection<String>	tags;
+	//	private Collection<@NotBlank String>	tags;
 
 	@NotBlank
 	private String				body;

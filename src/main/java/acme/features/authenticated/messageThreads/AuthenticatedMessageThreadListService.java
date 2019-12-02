@@ -40,7 +40,7 @@ public class AuthenticatedMessageThreadListService implements AbstractListServic
 		assert request != null;
 
 		Collection<MessageThread> result;
-		result = this.repository.findMany(request.getPrincipal().getActiveRoleId());
+		result = this.repository.findMany(request.getPrincipal().getAccountId());
 		return result;
 	}
 
