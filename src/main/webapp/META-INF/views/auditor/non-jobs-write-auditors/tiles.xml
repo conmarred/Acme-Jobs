@@ -18,11 +18,11 @@
 
 <tiles-definitions>
 
-	<definition name="auditor/job/list" extends="master">		
+	<definition name="auditor/non-job/list" extends="master">		
 		<put-attribute name="body" type="template" value="../auditor/non-jobs-write-auditors/list.jsp" />
 	</definition>
 	
-	<definition name="auditor/job/form" extends="master">		
+	<definition name="auditor/non-job/form" extends="master">		
 		<put-attribute name="body" type="template" value="../auditor/non-jobs-write-auditors/form.jsp" />
 	</definition>
 
