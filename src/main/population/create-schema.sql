@@ -290,9 +290,6 @@ create index IDXnr284tes3x8hnd3h716tmb3fr on `challenge` (`deadline`);
 
     alter table `job` 
        add constraint UK_7jmfdvs0b0jx7i33qxgv22h7b unique (`reference`);
-
-    alter table `message_thread_user_account` 
-       add constraint UK_a0wfo1cvpiypbe5yiplae9o59 unique (`users_id`);
 create index IDXq2o9psuqfuqmq59f0sq57x9uf on `offer` (`deadline`);
 
     alter table `offer` 
