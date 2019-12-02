@@ -73,6 +73,7 @@ master.menu.provider.create-request = Create request
 
 master.menu.auditor = Auditor
 master.menu.auditor.list-jobs-write-auditor = Jobs (Written an auditor)
+master.menu.auditor.list-non-jobs-write-auditor = Jobs (Non written an auditor)
 
 # master.menu.consumer ##########################################################
 

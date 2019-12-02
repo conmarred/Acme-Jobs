@@ -85,6 +85,7 @@ master.menu.consumer.create-offer = Crear oferta
 
 master.menu.auditor = Auditor
 master.menu.auditor.list-jobs-write-auditor = Trabajos (Escrita una auditoría)
+master.menu.auditor.list-non-jobs-write-auditor = Trabajos (No escrita una auditoría)
 
 # master.menu.worker ##########################################################
 
