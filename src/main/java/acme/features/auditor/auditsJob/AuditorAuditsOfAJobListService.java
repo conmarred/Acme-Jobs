@@ -1,9 +1,7 @@
 
 package acme.features.auditor.auditsJob;
 
-import java.util.ArrayList;
 import java.util.Collection;
-import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -43,10 +41,7 @@ public class AuditorAuditsOfAJobListService implements AbstractListService<Audit
 	public Collection<AuditRecord> findMany(final Request<AuditRecord> request) {
 		assert request != null;
 
-		List<AuditRecord> res = new ArrayList<AuditRecord>();
-
-		res.addAll(this.repository.findAuditsOfAJob(Integer.parseInt(request.getServletRequest().getParameter("id")), AuditRecordStatus.PUBLISHED));
-		res.addAll(this.repository.findMyAuditOfAJob(Integer.parseInt(request.getServletRequest().getParameter("id")), AuditRecordStatus.DRAFT, request.getPrincipal().getActiveRoleId()));
+		Collection<AuditRecord> res = this.repository.findAuditsOfAJob(Integer.parseInt(request.getServletRequest().getParameter("id")), AuditRecordStatus.DRAFT, AuditRecordStatus.PUBLISHED);
 
 		return res;
 	}
