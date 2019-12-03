@@ -922,4 +922,18 @@ m1=    1
   has &gt;</panel_attributes>
     <additional_attributes>250.0;10.0;10.0;380.0</additional_attributes>
   </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1496</x>
+      <y>248</y>
+      <w>288</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>lt=x-&gt;
+m1= 0..*
+m2= 1
+&lt; are created by </panel_attributes>
+    <additional_attributes>340.0;20.0;10.0;30.0</additional_attributes>
+  </element>
 </diagram>

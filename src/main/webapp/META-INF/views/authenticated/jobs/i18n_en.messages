@@ -20,6 +20,7 @@ authenticated.job.form.panel.descriptor.description = Description
 authenticated.job.form.panel.descriptor.duties = Duty
 
 authenticated.job.form.button.return = Return
+authenticated.audits-record.form.button.list-audits-job = Audits of this job
 
 authenticated.job.list.label.title = Title
 authenticated.job.list.label.deadline = Deadline

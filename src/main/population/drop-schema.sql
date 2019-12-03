@@ -59,6 +59,10 @@
        drop 
        foreign key `FKn5adlx3oqjna7aupm8gwg3fuj`;
 
+    alter table `message` 
+       drop 
+       foreign key `FK9o6wsmyyjow8oqtoxdp3iein9`;
+
     alter table `message_thread_user_account` 
        drop 
        foreign key `FKnbmip5t870fxbecafgaxvyde8`;

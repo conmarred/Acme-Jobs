@@ -8,14 +8,14 @@
 # purposes.  The copyright owner does not offer any warranties or representations, nor do
 # they accept any liabilities with respect to them.
 
-auditor.audits-of-a-job.form.label.moment = Moment
-auditor.audits-of-a-job.form.label.title = Title
-auditor.audits-of-a-job.form.label.status = Status
-auditor.audits-of-a-job.form.label.body = Body
+authenticated.audits-of-a-job.form.label.moment = Moment
+authenticated.audits-of-a-job.form.label.title = Title
+authenticated.audits-of-a-job.form.label.status = Status
+authenticated.audits-of-a-job.form.label.body = Body
 
-auditor.audits-of-a-job.form.button.return = Return
+authenticated.audits-of-a-job.form.button.return = Return
 
-auditor.audits-of-a-job.list.label.title = Title
-auditor.audits-of-a-job.list.label.moment = Moment
+authenticated.audits-of-a-job.list.label.title = Title
+authenticated.audits-of-a-job.list.label.moment = Moment
 
-auditor.audits-of-a-job.list.button.return = Return
+authenticated.audits-of-a-job.list.button.return = Return

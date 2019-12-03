@@ -14,6 +14,7 @@ import javax.validation.constraints.Past;
 
 import acme.entities.messageThreads.MessageThread;
 import acme.framework.entities.DomainEntity;
+import acme.framework.entities.UserAccount;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -43,5 +44,10 @@ public class Message extends DomainEntity {
 	@Valid
 	@ManyToOne(optional = false)
 	private MessageThread		messageThread;
+
+	@NotNull
+	@Valid
+	@ManyToOne(optional = false)
+	private UserAccount			user;
 
 }

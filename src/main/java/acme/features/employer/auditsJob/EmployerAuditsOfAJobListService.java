@@ -1,5 +1,5 @@
 
-package acme.features.auditor.auditsJob;
+package acme.features.employer.auditsJob;
 
 import java.util.Collection;
 
@@ -8,16 +8,16 @@ import org.springframework.stereotype.Service;
 
 import acme.entities.auditRecords.AuditRecord;
 import acme.entities.auditRecords.AuditRecordStatus;
-import acme.entities.roles.Auditor;
+import acme.entities.roles.Employer;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
 import acme.framework.services.AbstractListService;
 
 @Service
-public class AuditorAuditsOfAJobListService implements AbstractListService<Auditor, AuditRecord> {
+public class EmployerAuditsOfAJobListService implements AbstractListService<Employer, AuditRecord> {
 
 	@Autowired
-	AuditorAuditsOfAJobRepository repository;
+	EmployerAuditsOfAJobRepository repository;
 
 
 	@Override
@@ -34,7 +34,6 @@ public class AuditorAuditsOfAJobListService implements AbstractListService<Audit
 		assert model != null;
 
 		request.unbind(entity, model, "title", "moment");
-
 	}
 
 	@Override

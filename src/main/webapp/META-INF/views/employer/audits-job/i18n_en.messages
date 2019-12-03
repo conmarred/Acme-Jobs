@@ -1,4 +1,4 @@
-﻿# i18n_es.messages
+# i18n_en.messages
 #
 # Copyright (c) 2019 Rafael Corchuelo.
 #
@@ -8,14 +8,16 @@
 # purposes.  The copyright owner does not offer any warranties or representations, nor do
 # they accept any liabilities with respect to them.
 
-auditor.audits-of-a-job.form.label.moment = Momento
-auditor.audits-of-a-job.form.label.title = Título
-auditor.audits-of-a-job.form.label.status = Estado
-auditor.audits-of-a-job.form.label.body = Cuerpo
+employer.audits-of-a-job.form.label.moment = Moment
+employer.audits-of-a-job.form.label.title = Title
+employer.audits-of-a-job.form.label.status = Status
+employer.audits-of-a-job.form.label.body = Body
 
-auditor.audits-of-a-job.form.button.return = Volver
+employer.audits-of-a-job.form.button.return = Return
 
-auditor.audits-of-a-job.list.label.title = Título
-auditor.audits-of-a-job.list.label.moment = Momento
 
-auditor.audits-of-a-job.list.button.return = Volver
+employer.audits-of-a-job.list.label.title = Title
+employer.audits-of-a-job.list.label.moment = Moment
+
+employer.audits-of-a-job.list.button.return = Return
+

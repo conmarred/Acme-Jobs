@@ -179,6 +179,7 @@
         `moment` datetime(6),
         `title` varchar(255),
         `message_thread_id` integer not null,
+        `user_id` integer not null,
         primary key (`id`)
     ) engine=InnoDB;
 
@@ -378,6 +379,11 @@ create index IDXmly5kwrpgadjkxv5t5dgw36hr on `requests` (`deadline`);
        add constraint `FKn5adlx3oqjna7aupm8gwg3fuj` 
        foreign key (`message_thread_id`) 
        references `message_thread` (`id`);
+
+    alter table `message` 
+       add constraint `FK9o6wsmyyjow8oqtoxdp3iein9` 
+       foreign key (`user_id`) 
+       references `user_account` (`id`);
 
     alter table `message_thread_user_account` 
        add constraint `FKnbmip5t870fxbecafgaxvyde8` 

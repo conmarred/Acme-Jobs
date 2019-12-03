@@ -32,7 +32,7 @@ public class AuthenticatedJobShowService implements AbstractShowService<Authenti
 
 		model.setAttribute("duties", entity.getDescriptor().getDuties());
 
-		request.unbind(entity, model, "reference", "title", "status", "deadline", "salary", "link", "descriptor.description");
+		request.unbind(entity, model, "reference", "title", "status", "deadline", "salary", "link", "descriptor.description", "id");
 
 	}
 
