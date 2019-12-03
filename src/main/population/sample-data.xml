@@ -604,8 +604,8 @@
 
 	<bean name="worker01" class="acme.entities.roles.Worker">
 		<property name="userAccount" ref="workerUserAccount01" />
-		<property name= "qualifications" value= "Un máquina"/>
-		<property name= "skills" value= "Teclea to rápido"/>
+		<property name= "qualifications" value= "Good at computer science"/>
+		<property name= "skills" value= "Years of experience"/>
 	</bean>
 	
 	<bean name="workerAuthenticated01" class="acme.framework.entities.Authenticated">

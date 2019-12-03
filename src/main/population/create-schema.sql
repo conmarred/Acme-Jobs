@@ -284,6 +284,8 @@ create index IDXnr284tes3x8hnd3h716tmb3fr on `challenge` (`deadline`);
 
     alter table `descriptor_duty` 
        add constraint UK_kvr5rclgwa51d625rmx13ke96 unique (`duties_id`);
+create index IDX28ur9xm72oo1df9g14xhnh8h3 on `job` (`status`);
+create index IDXfdmpnr8o4phmk81sqsano16r on `job` (`deadline`);
 
     alter table `job` 
        add constraint UK_qpodqtu8nvqkof3olnqnqcv2l unique (`descriptor_id`);
