@@ -839,7 +839,7 @@
 	
 	<bean id="auditRecord02" class="acme.entities.auditRecords.AuditRecord">
 		<property name= "title" value= "This is a title2"/>
-		<property name= "status" value= "PUBLISHED"/>
+		<property name= "status" value= "DRAFT"/>
 		<property name= "moment" value= "2018/12/26 19:00"/>
 		<property name= "body" value= "This is a body2"/>
 		<property name= "job" ref= "job01"/>
@@ -848,10 +848,10 @@
 	
 	<bean id="auditRecord03" class="acme.entities.auditRecords.AuditRecord">
 		<property name= "title" value= "This is a title3"/>
-		<property name= "status" value= "DRAFT"/>
+		<property name= "status" value= "PUBLISHED"/>
 		<property name= "moment" value= "2018/12/26 19:00"/>
 		<property name= "body" value= "This is a body3"/>
-		<property name= "job" ref= "job02"/>
+		<property name= "job" ref= "job01"/>
 		<property name= "auditor" ref= "auditor01"/>
 	</bean> 
 	

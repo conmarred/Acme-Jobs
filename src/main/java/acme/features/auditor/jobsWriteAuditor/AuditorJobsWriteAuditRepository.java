@@ -12,7 +12,7 @@ import acme.framework.repositories.AbstractRepository;
 @Repository
 public interface AuditorJobsWriteAuditRepository extends AbstractRepository {
 
-	@Query("select a.job from AuditRecord a where a.auditor.id = ?1")
+	@Query("select distinct a.job from AuditRecord a where a.auditor.id = ?1")
 	Collection<Job> jobsAuditorHasWrittenAudit(int id);
 
 	@Query("select a.job from AuditRecord a where a.job.id = ?1")
