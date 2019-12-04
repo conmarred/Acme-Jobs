@@ -30,8 +30,6 @@ public class AuthenticatedJobShowService implements AbstractShowService<Authenti
 		assert entity != null;
 		assert model != null;
 
-		model.setAttribute("duties", entity.getDescriptor().getDuties());
-
 		request.unbind(entity, model, "reference", "title", "status", "deadline", "salary", "link", "descriptor.description", "id");
 
 	}
@@ -46,8 +44,6 @@ public class AuthenticatedJobShowService implements AbstractShowService<Authenti
 		id = request.getModel().getInteger("id");
 		res = this.repository.findOneJobById(id);
 		res.getEmployer().getUserAccount().getRoles().size();
-		res.getDescriptor().getDuties().size();
-
 		return res;
 	}
 

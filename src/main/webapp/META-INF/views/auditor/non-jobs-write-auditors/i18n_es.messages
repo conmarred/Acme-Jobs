@@ -16,8 +16,7 @@ auditor.non-jobs-write-auditors.form.label.salary = Sueldo
 auditor.non-jobs-write-auditors.form.label.link = Más imformación
 
 auditor.non-jobs-write-auditors.form.panel.descriptor = Descriptor/a
-auditor.non-jobs-write-auditors.form.panel.descriptor.description = Descripción
-auditor.non-jobs-write-auditors.form.panel.descriptor.duties = Labor
+auditor.non-jobs-write-auditors.form.button.duties = Labores de este/a descriptor/a
 
 auditor.non-jobs-write-auditors.form.button.return = Volver
 auditor.non-jobs-write-auditors.form.button.list-audits-job = Auditorías de este trabajo

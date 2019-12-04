@@ -17,7 +17,7 @@ auditor.jobs-write-auditors.form.label.link = More information
 
 auditor.jobs-write-auditors.form.panel.descriptor = Descriptor
 auditor.jobs-write-auditors.form.panel.descriptor.description = Description
-auditor.jobs-write-auditors.form.panel.descriptor.duties = Duty
+auditor.jobs-write-auditors.form.button.duties = Duties of this descriptor
 
 auditor.jobs-write-auditors.form.button.return = Return
 auditor.jobs-write-auditors.form.button.list-audits-job = Audits of this job
