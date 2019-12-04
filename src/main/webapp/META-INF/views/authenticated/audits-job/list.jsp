@@ -19,8 +19,8 @@
 <acme:list readonly="false">
 <acme:list-column code="authenticated.audits-of-a-job.list.label.moment" path="moment" width="20%"/>
 	<acme:list-column code="authenticated.audits-of-a-job.list.label.title" path="title" width="20%"/>
-	<acme:list-column code="authenticated.audits-of-a-job.list.label.workerUsername" path="workerUsername" width="20%"/>
 	<acme:list-column code="authenticated.audits-of-a-job.list.label.job-title" path="job.title" width="20%"/>
+	<acme:list-column code="authenticated.audits-of-a-job.list.label.workerUsername" path="workerUsername" width="20%"/>
 </acme:list>
 
 <acme:form-return code="authenticated.audits-of-a-job.list.button.return"/>

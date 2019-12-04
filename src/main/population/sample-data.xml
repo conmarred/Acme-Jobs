@@ -766,6 +766,39 @@
 		<property name="worker" ref="worker01"/>
 	</bean>
 	
+	<bean id= "application05" class= "acme.entities.applications.Application">
+		<property name= "reference" value= "LRTE-PMNE"/>
+		<property name= "moment" value= "2015/01/24 13:07"/>
+		<property name= "status" value= "PENDING"/>
+		<property name= "statement" value= "This is an application05"/>
+		<property name= "skills" value= "Communication"/>
+		<property name= "qualifications" value= "Ability to perform certain tasks such as lifting, standing or extreme temperatures."/>
+		<property name="job" ref="job01"/>
+		<property name="worker" ref="worker01"/>
+	</bean>
+	
+	<bean id= "application06" class= "acme.entities.applications.Application">
+		<property name= "reference" value= "JEJE-FENF"/>
+		<property name= "moment" value= "2017/02/04 05:00"/>
+		<property name= "status" value= "ACCEPTED"/>
+		<property name= "statement" value= "This is an application06"/>
+		<property name= "skills" value= "Self-motivation"/>
+		<property name= "qualifications" value= "Specific industry knowledge."/>
+		<property name="job" ref="job05"/>
+		<property name="worker" ref="worker02"/>
+	</bean>
+	
+	<bean id= "application07" class= "acme.entities.applications.Application">
+		<property name= "reference" value= "MGHF-WFNE"/>
+		<property name= "moment" value= "2018/01/01 22:00"/>
+		<property name= "status" value= "ACCEPTED"/>
+		<property name= "statement" value= "This is an application07"/>
+		<property name= "skills" value= "Leadership"/>
+		<property name= "qualifications" value= "Timeliness and dependability."/>
+		<property name="job" ref="job04"/>
+		<property name="worker" ref="worker01"/>
+	</bean>
+	
 	<!-- Auditor -->
 	
 	<bean name="auditorUserAccount01" class="acme.framework.entities.UserAccount">
@@ -912,6 +945,7 @@
 		<property name= "title" value= "Message"/>
 		<property name= "moment" value= "2019/04/10 14:00"/>
 		<property name= "body" value= "This is a message from the coordinator."/>
+		<property name= "tags" value= "tag1, tag2"/>
 		<property name="user" ref="employerUserAccount02"/>
 		<property name= "messageThread" ref= "messageThread01"/>
 	</bean> 
@@ -920,6 +954,7 @@
 		<property name= "title" value= "Old message"/>
 		<property name= "moment" value= "2012/02/26 13:34"/>
 		<property name= "body" value= "This is a message from time ago."/>
+		<property name= "tags" value= ""/>
 		<property name="user" ref="employerUserAccount02"/>
 		<property name= "messageThread" ref= "messageThread01"/>
 	</bean> 
@@ -928,6 +963,7 @@
 		<property name= "title" value= "New message"/>
 		<property name= "moment" value= "2019/12/02 18:46"/>
 		<property name= "body" value= "This is a message of a new application."/>
+		<property name= "tags" value= "tag1, tag2, tag3, tag4"/>
 		<property name="user" ref="employerUserAccount01"/>
 		<property name= "messageThread" ref= "messageThread01"/>
 	</bean> 
@@ -936,6 +972,7 @@
 		<property name= "title" value= "Testing message"/>
 		<property name= "moment" value= "2019/04/11 15:00"/>
 		<property name= "body" value= "This is a message testing the thread."/>
+		<property name= "tags" value= "tag1, tag2, tag3, tag4, tag5, tag6"/>
 		<property name="user" ref="employerUserAccount02"/>
 		<property name= "messageThread" ref= "messageThread01"/>
 	</bean> 
@@ -944,6 +981,7 @@
 		<property name= "title" value= "Winter"/>
 		<property name= "moment" value= "2018/12/11 17:00"/>
 		<property name= "body" value= "It is starting to get cold."/>
+		<property name= "tags" value= ""/>
 		<property name="user" ref="employerUserAccount01"/>
 		<property name= "messageThread" ref= "messageThread01"/>
 	</bean> 
@@ -952,6 +990,7 @@
 		<property name= "title" value= "Christmas"/>
 		<property name= "moment" value= "2017/12/25 12:00"/>
 		<property name= "body" value= "Merry Christmas to everybody!"/>
+		<property name= "tags" value= "tag2, tag8, tag20"/>
 		<property name="user" ref="employerUserAccount02"/>
 		<property name= "messageThread" ref= "messageThread02"/>
 	</bean> 
@@ -960,6 +999,7 @@
 		<property name= "title" value= "New year"/>
 		<property name= "moment" value= "2019/01/01 00:30"/>
 		<property name= "body" value= "Happy new year to everyone reading this thread!"/>
+		<property name= "tags" value= "tag10, tag80"/>
 		<property name="user" ref="auditorUserAccount01"/>
 		<property name= "messageThread" ref= "messageThread02"/>
 	</bean> 
@@ -968,6 +1008,7 @@
 		<property name= "title" value= "Summer"/>
 		<property name= "moment" value= "2019/08/25 18:00"/>
 		<property name= "body" value= "I am enjoying my holidays in a beautiful beach."/>
+		<property name= "tags" value= ""/>
 		<property name="user" ref="auditorUserAccount01"/>
 		<property name= "messageThread" ref= "messageThread02"/>
 	</bean> 

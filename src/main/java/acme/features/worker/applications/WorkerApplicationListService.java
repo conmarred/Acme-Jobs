@@ -32,9 +32,7 @@ public class WorkerApplicationListService implements AbstractListService<Worker,
 		assert entity != null;
 		assert model != null;
 
-		model.setAttribute("username", entity.getWorker().getUserAccount().getUsername());
-
-		request.unbind(entity, model, "moment", "status", "job.reference");
+		request.unbind(entity, model, "moment", "status", "job.title");
 	}
 
 	@Override

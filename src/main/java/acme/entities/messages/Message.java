@@ -33,7 +33,7 @@ public class Message extends DomainEntity {
 	@Past
 	private Date				moment;
 
-	//	private Collection<String>	tags;
+	private String				tags;
 
 	@NotBlank
 	private String				body;

@@ -19,5 +19,4 @@ worker.application.form.button.return = Return
 
 worker.application.list.label.moment = Moment
 worker.application.list.label.status = Status
-worker.application.list.label.job-reference = Job's reference code
-worker.application.list.label.username = Username
+worker.application.list.label.job-title = Job's title

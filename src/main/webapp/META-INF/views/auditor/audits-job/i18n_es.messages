@@ -18,6 +18,6 @@ auditor.audits-of-a-job.form.button.return = Volver
 auditor.audits-of-a-job.list.label.title = Título
 auditor.audits-of-a-job.list.label.moment = Momento
 auditor.audits-of-a-job.list.label.job-title = Título del trabajo
-auditor.audits-of-a-job.list.label.username = Nombre del usuario
+auditor.audits-of-a-job.list.label.username = Usuario
 
 auditor.audits-of-a-job.list.button.return = Volver

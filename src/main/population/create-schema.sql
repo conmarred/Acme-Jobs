@@ -177,6 +177,7 @@
         `version` integer not null,
         `body` varchar(255),
         `moment` datetime(6),
+        `tags` varchar(255),
         `title` varchar(255),
         `message_thread_id` integer not null,
         `user_id` integer not null,

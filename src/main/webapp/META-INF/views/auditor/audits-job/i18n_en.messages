@@ -17,7 +17,7 @@ auditor.audits-of-a-job.form.button.return = Return
 
 auditor.audits-of-a-job.list.label.title = Title
 auditor.audits-of-a-job.list.label.moment = Moment
-auditor.audits-of-a-job.list.label.job-title = Work's title
+auditor.audits-of-a-job.list.label.job-title = Job's title
 auditor.audits-of-a-job.list.label.username = Username
 
 auditor.audits-of-a-job.list.button.return = Return

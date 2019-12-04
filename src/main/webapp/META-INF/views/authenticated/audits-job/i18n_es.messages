@@ -18,7 +18,7 @@ authenticated.audits-of-a-job.form.button.return = Volver
 
 authenticated.audits-of-a-job.list.label.title = Título
 authenticated.audits-of-a-job.list.label.moment = Momento
-authenticated.audits-of-a-job.list.label.workerUsername = Nombre del trabajador
+authenticated.audits-of-a-job.list.label.workerUsername = Usuario
 authenticated.audits-of-a-job.list.label.job-title = Título del trabajo
 
 authenticated.audits-of-a-job.list.button.return = Volver

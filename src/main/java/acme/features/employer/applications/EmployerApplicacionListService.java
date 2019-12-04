@@ -33,7 +33,7 @@ public class EmployerApplicacionListService implements AbstractListService<Emplo
 
 		model.setAttribute("username", entity.getWorker().getUserAccount().getUsername());
 
-		request.unbind(entity, model, "moment", "status", "job.reference");
+		request.unbind(entity, model, "moment", "status", "job.title");
 
 	}
 
