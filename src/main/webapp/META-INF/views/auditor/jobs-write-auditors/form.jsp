@@ -24,16 +24,9 @@
 	<acme:form-url code="auditor.jobs-write-auditors.form.label.link" path="link"/>
 	<acme:form-panel code="auditor.jobs-write-auditors.form.panel.descriptor">
 		<acme:form-textbox code="auditor.jobs-write-auditors.form.panel.descriptor.description" path="descriptor.description"/>
-		<jstl:forEach var="duty" items="${duties}">
-			<acme:form-panel code="auditor.jobs-write-auditors.form.panel.descriptor.duties">
-				<acme:print value="${duty.title}"/> <br/>
-				<acme:print value="${duty.description}"/><br/>
-				<acme:print value="${duty.time}"/> % <br/>
-				<br/>
-			</acme:form-panel>
-		</jstl:forEach>
 	</acme:form-panel>
 	
+	<acme:form-submit code="auditor.jobs-write-auditors.form.button.duties" action="/auditor/duty/list?id=${id}" method="get"/>
 	<acme:form-submit code="auditor.jobs-write-auditors.form.button.list-audits-job" action="/auditor/audit-record/list-audits-job?id=${id}" method="get"/>
   	<acme:form-return code="auditor.jobs-write-auditors.form.button.return"/>
 </acme:form>

@@ -17,10 +17,10 @@ authenticated.job.form.label.link = Más información
 
 authenticated.job.form.panel.descriptor = Descriptor/a
 authenticated.job.form.panel.descriptor.description = Descripción
-authenticated.job.form.panel.descriptor.duties = Labor
 
 authenticated.job.form.button.return = Volver
-authenticated.audits-record.form.button.list-audits-job = Auditorías de este trabajo
+authenticated.job.form.button.list-audits-job = Auditorías de este trabajo
+authenticated.job.form.button.duties = Labores de este/a descriptor/a
 
 authenticated.job.list.label.title = Título
 authenticated.job.list.label.deadline = Fecha límite

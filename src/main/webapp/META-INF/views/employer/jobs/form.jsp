@@ -24,16 +24,9 @@
 	<acme:form-url code="employer.job.form.label.link" path="link"/>
 	<acme:form-panel code="employer.job.form.panel.descriptor">
 		<acme:form-textbox code="employer.job.form.panel.descriptor.description" path="descriptor.description"/>
-		<jstl:forEach var="duty" items="${duties}">
-			<acme:form-panel code="employer.job.form.panel.descriptor.duties">
-				<acme:print value="${duty.title}"/> <br/>
-				<acme:print value="${duty.description}"/><br/>
-				<acme:print value="${duty.time}"/> % <br/>
-				<br/>
-			</acme:form-panel>
-		</jstl:forEach>
 	</acme:form-panel>
 	
-	<acme:form-submit code="employer.audits-record.form.button.list-audits-job" action="/employer/audit-record/list-audits-job?id=${id}" method="get"/>
+	<acme:form-submit code="employer.job.form.button.duties" action="/employer/duty/list?id=${id}" method="get"/>
+	<acme:form-submit code="employer.job.form.button.list-audits-job" action="/employer/audit-record/list-audits-job?id=${id}" method="get"/>
   	<acme:form-return code="employer.job.form.button.return"/>
 </acme:form>

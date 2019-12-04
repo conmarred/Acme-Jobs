@@ -29,8 +29,6 @@ public class NonJobsWriteAuditorShowService implements AbstractShowService<Audit
 		assert entity != null;
 		assert model != null;
 
-		model.setAttribute("duties", entity.getDescriptor().getDuties());
-
 		request.unbind(entity, model, "reference", "status", "title", "deadline", "salary", "link", "descriptor.description", "id");
 	}
 
@@ -40,7 +38,6 @@ public class NonJobsWriteAuditorShowService implements AbstractShowService<Audit
 
 		Job res = this.repository.findOne(request.getModel().getInteger("id"));
 		res.getEmployer().getUserAccount().getRoles().size();
-		res.getDescriptor().getDuties().size();
 
 		return res;
 	}

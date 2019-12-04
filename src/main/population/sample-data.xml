@@ -367,84 +367,98 @@
 		<property name= "title" value= "This is a title"/>
 		<property name= "description" value= "This is a description"/>
 		<property name= "time" value= "50"/>
+		<property name= "descriptor" ref="descriptor01"/>
 	</bean>
 	
 	<bean id= "duty02" class= "acme.entities.duties.Duty">
 		<property name= "title" value= "This is a title2"/>
 		<property name= "description" value= "This is a description2"/>
 		<property name= "time" value= "60"/>
+		<property name= "descriptor" ref="descriptor01"/>
 	</bean>
 	
 	<bean id= "duty03" class= "acme.entities.duties.Duty">
 		<property name= "title" value= "This is a title3"/>
 		<property name= "description" value= "This is a description3"/>
 		<property name= "time" value= "70"/>
+		<property name= "descriptor" ref="descriptor02"/>
 	</bean>
 	
 	<bean id= "duty04" class= "acme.entities.duties.Duty">
 		<property name= "title" value= "This is a title4"/>
 		<property name= "description" value= "This is a description4"/>
 		<property name= "time" value= "10"/>
+		<property name= "descriptor" ref="descriptor02"/>
 	</bean>
 	
 	<bean id= "duty05" class= "acme.entities.duties.Duty">
 		<property name= "title" value= "This is a title5"/>
 		<property name= "description" value= "This is a description5"/>
 		<property name= "time" value= "20"/>
+		<property name= "descriptor" ref="descriptor03"/>
 	</bean>
 	
 	<bean id= "duty06" class= "acme.entities.duties.Duty">
 		<property name= "title" value= "This is a title6"/>
 		<property name= "description" value= "This is a description6"/>
 		<property name= "time" value= "40"/>
+		<property name= "descriptor" ref="descriptor03"/>
 	</bean>
 	
 	<bean id= "duty07" class= "acme.entities.duties.Duty">
 		<property name= "title" value= "This is a title7"/>
 		<property name= "description" value= "This is a description7"/>
 		<property name= "time" value= "10"/>
+		<property name= "descriptor" ref="descriptor04"/>
 	</bean>
 	
 	<bean id= "duty08" class= "acme.entities.duties.Duty">
 		<property name= "title" value= "This is a title8"/>
 		<property name= "description" value= "This is a description8"/>
 		<property name= "time" value= "20"/>
+		<property name= "descriptor" ref="descriptor04"/>
 	</bean>
 	
 	<bean id= "duty09" class= "acme.entities.duties.Duty">
 		<property name= "title" value= "This is a title9"/>
 		<property name= "description" value= "This is a description9"/>
 		<property name= "time" value= "30"/>
+		<property name= "descriptor" ref="descriptor05"/>
 	</bean>
 	
 	<bean id= "duty10" class= "acme.entities.duties.Duty">
 		<property name= "title" value= "This is a title10"/>
 		<property name= "description" value= "This is a description10"/>
 		<property name= "time" value= "60"/>
+		<property name= "descriptor" ref="descriptor05"/>
 	</bean>
 	
 	<bean id= "duty11" class= "acme.entities.duties.Duty">
 		<property name= "title" value= "This is a title11"/>
 		<property name= "description" value= "This is a description11"/>
 		<property name= "time" value= "50"/>
+		<property name= "descriptor" ref="descriptor06"/>
 	</bean>
 	
 	<bean id= "duty12" class= "acme.entities.duties.Duty">
 		<property name= "title" value= "This is a title12"/>
 		<property name= "description" value= "This is a description12"/>
 		<property name= "time" value= "30"/>
+		<property name= "descriptor" ref="descriptor06"/>
 	</bean>
 	
 	<bean id= "duty13" class= "acme.entities.duties.Duty">
 		<property name= "title" value= "This is a title13"/>
 		<property name= "description" value= "This is a description13"/>
 		<property name= "time" value= "50"/>
+		<property name= "descriptor" ref="descriptor07"/>
 	</bean>
 	
 	<bean id= "duty14" class= "acme.entities.duties.Duty">
 		<property name= "title" value= "This is a title14"/>
 		<property name= "description" value= "This is a description14"/>
 		<property name= "time" value= "20"/>
+		<property name= "descriptor" ref="descriptor07"/>
 	</bean>
 	
 	<!-- Employer -->
@@ -511,72 +525,30 @@
 	
 	<bean id= "descriptor01" class= "acme.entities.descriptors.Descriptor">
 		<property name= "description" value= "This is a description1"/>
-		<property name= "duties">
-			<list>
-				<ref bean="duty01"/>
-				<ref bean="duty02"/>
-			</list>
-		</property>
 	</bean>
 	
 	<bean id= "descriptor02" class= "acme.entities.descriptors.Descriptor">
 		<property name= "description" value= "This is a description2"/>
-		<property name= "duties">
-			<list>
-				<ref bean="duty03"/>
-				<ref bean="duty04"/>
-			</list>
-		</property>
 	</bean>
 	
 	<bean id= "descriptor03" class= "acme.entities.descriptors.Descriptor">
 		<property name= "description" value= "This is a description3"/>
-		<property name= "duties">
-			<list>
-				<ref bean="duty05"/>
-				<ref bean="duty06"/>
-			</list>
-		</property>
 	</bean>
 	
 	<bean id= "descriptor04" class= "acme.entities.descriptors.Descriptor">
 		<property name= "description" value= "This is a description4"/>
-		<property name= "duties">
-			<list>
-				<ref bean="duty07"/>
-				<ref bean="duty08"/>
-			</list>
-		</property>
 	</bean>
 	
 	<bean id= "descriptor05" class= "acme.entities.descriptors.Descriptor">
 		<property name= "description" value= "This is a description5"/>
-		<property name= "duties">
-			<list>
-				<ref bean="duty09"/>
-				<ref bean="duty10"/>
-			</list>
-		</property>
 	</bean>
 	
 	<bean id= "descriptor06" class= "acme.entities.descriptors.Descriptor">
 		<property name= "description" value= "This is a description6"/>
-		<property name= "duties">
-			<list>
-				<ref bean="duty11"/>
-				<ref bean="duty12"/>
-			</list>
-		</property>
 	</bean>
 	
 	<bean id= "descriptor07" class= "acme.entities.descriptors.Descriptor">
 		<property name= "description" value= "This is a description7"/>
-		<property name= "duties">
-			<list>
-				<ref bean="duty13"/>
-				<ref bean="duty14"/>
-			</list>
-		</property>
 	</bean>
 	
 	
