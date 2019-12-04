@@ -33,7 +33,8 @@ public class AuthenticatedAuditsOfAJobListService implements AbstractListService
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "title", "moment");
+		model.setAttribute("workerUsername", entity.getAuditor().getUserAccount().getUsername());
+		request.unbind(entity, model, "title", "moment", "job.title");
 	}
 
 	@Override

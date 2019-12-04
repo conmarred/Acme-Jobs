@@ -30,6 +30,8 @@ public class WorkerApplicationShowService implements AbstractShowService<Worker,
 		assert entity != null;
 		assert model != null;
 
+		model.setAttribute("username", entity.getWorker().getUserAccount().getUsername());
+
 		request.unbind(entity, model, "reference", "moment", "status", "statement", "skills", "qualifications");
 	}
 

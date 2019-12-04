@@ -30,7 +30,9 @@ public class AuditorAuditsOfAJobShowService implements AbstractShowService<Audit
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "title", "status", "moment", "body");
+		model.setAttribute("username", entity.getAuditor().getUserAccount().getUsername());
+
+		request.unbind(entity, model, "title", "status", "moment", "body", "job.title");
 
 	}
 

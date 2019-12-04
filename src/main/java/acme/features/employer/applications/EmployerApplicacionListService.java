@@ -31,6 +31,8 @@ public class EmployerApplicacionListService implements AbstractListService<Emplo
 		assert entity != null;
 		assert model != null;
 
+		model.setAttribute("username", entity.getWorker().getUserAccount().getUsername());
+
 		request.unbind(entity, model, "moment", "status", "job.reference");
 
 	}

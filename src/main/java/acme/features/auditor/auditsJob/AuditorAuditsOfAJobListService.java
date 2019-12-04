@@ -32,8 +32,8 @@ public class AuditorAuditsOfAJobListService implements AbstractListService<Audit
 		assert request != null;
 		assert entity != null;
 		assert model != null;
-
-		request.unbind(entity, model, "title", "moment");
+		model.setAttribute("username", entity.getAuditor().getUserAccount().getUsername());
+		request.unbind(entity, model, "title", "moment", "job.title");
 
 	}
 

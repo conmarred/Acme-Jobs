@@ -20,3 +20,4 @@ employer.application.form.button.return = Return
 employer.application.list.label.moment = Moment
 employer.application.list.label.status = Status
 employer.application.list.label.job-reference = Job's reference code
+employer.application.list.label.username = Username
