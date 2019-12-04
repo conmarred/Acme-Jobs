@@ -29,7 +29,9 @@ public class AuthenticatedMessageShowService implements AbstractShowService<Auth
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "title", "moment", "body");
+		model.setAttribute("username", entity.getUser().getUsername());
+
+		request.unbind(entity, model, "title", "moment", "body", "tags");
 	}
 
 	@Override

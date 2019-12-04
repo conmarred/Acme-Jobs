@@ -32,7 +32,7 @@ public class EmployerJobShowService implements AbstractShowService<Employer, Job
 
 		model.setAttribute("duties", entity.getDescriptor().getDuties());
 
-		request.unbind(entity, model, "reference", "status", "title", "deadline", "salary", "link", "descriptor.description");
+		request.unbind(entity, model, "reference", "status", "title", "deadline", "salary", "link", "descriptor.description", "id");
 	}
 
 	@Override

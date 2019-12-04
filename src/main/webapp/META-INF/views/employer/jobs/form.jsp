@@ -34,5 +34,6 @@
 		</jstl:forEach>
 	</acme:form-panel>
 	
+	<acme:form-submit code="employer.audits-record.form.button.list-audits-job" action="/employer/audit-record/list-audits-job?id=${id}" method="get"/>
   	<acme:form-return code="employer.job.form.button.return"/>
 </acme:form>

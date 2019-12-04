@@ -1,20 +1,23 @@
 
-package acme.features.auditor.auditsJob;
+package acme.features.employer.auditsJob;
+
+import java.util.Collection;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import acme.entities.auditRecords.AuditRecord;
-import acme.entities.roles.Auditor;
+import acme.entities.auditRecords.AuditRecordStatus;
+import acme.entities.roles.Employer;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
-import acme.framework.services.AbstractShowService;
+import acme.framework.services.AbstractListService;
 
 @Service
-public class AuditorAuditsOfAJobShowService implements AbstractShowService<Auditor, AuditRecord> {
+public class EmployerAuditsOfAJobListService implements AbstractListService<Employer, AuditRecord> {
 
 	@Autowired
-	AuditorAuditsOfAJobRepository repository;
+	EmployerAuditsOfAJobRepository repository;
 
 
 	@Override
@@ -32,15 +35,14 @@ public class AuditorAuditsOfAJobShowService implements AbstractShowService<Audit
 
 		model.setAttribute("username", entity.getAuditor().getUserAccount().getUsername());
 
-		request.unbind(entity, model, "title", "status", "moment", "body", "job.title");
-
+		request.unbind(entity, model, "title", "moment", "job.title");
 	}
 
 	@Override
-	public AuditRecord findOne(final Request<AuditRecord> request) {
+	public Collection<AuditRecord> findMany(final Request<AuditRecord> request) {
 		assert request != null;
 
-		AuditRecord res = this.repository.findOne(request.getModel().getInteger("id"));
+		Collection<AuditRecord> res = this.repository.findAuditsOfAJob(Integer.parseInt(request.getServletRequest().getParameter("id")), AuditRecordStatus.DRAFT, request.getPrincipal().getActiveRoleId(), AuditRecordStatus.PUBLISHED);
 
 		return res;
 	}

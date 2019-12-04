@@ -18,5 +18,5 @@
 <acme:list readonly = "false">
 	<acme:list-column code="worker.application.list.label.moment" path="moment" width="20%"/>
 	<acme:list-column code="worker.application.list.label.status" path="status" width="20%"/>	
-	<acme:list-column code="worker.application.list.label.job-reference" path="job.reference" width="20%"/>	
+	<acme:list-column code="worker.application.list.label.job-title" path="job.title" width="20%"/>	
 </acme:list>

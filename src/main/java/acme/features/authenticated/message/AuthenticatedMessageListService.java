@@ -32,6 +32,8 @@ public class AuthenticatedMessageListService implements AbstractListService<Auth
 		assert entity != null;
 		assert model != null;
 
+		model.setAttribute("username", entity.getUser().getUsername());
+
 		request.unbind(entity, model, "title", "moment");
 
 	}

@@ -1,20 +1,20 @@
 
-package acme.features.auditor.auditsJob;
+package acme.features.employer.auditsJob;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import acme.entities.auditRecords.AuditRecord;
-import acme.entities.roles.Auditor;
+import acme.entities.roles.Employer;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
 import acme.framework.services.AbstractShowService;
 
 @Service
-public class AuditorAuditsOfAJobShowService implements AbstractShowService<Auditor, AuditRecord> {
+public class EmployerAuditsOfAJobShowService implements AbstractShowService<Employer, AuditRecord> {
 
 	@Autowired
-	AuditorAuditsOfAJobRepository repository;
+	EmployerAuditsOfAJobRepository repository;
 
 
 	@Override

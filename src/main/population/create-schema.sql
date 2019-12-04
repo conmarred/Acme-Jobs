@@ -177,8 +177,10 @@
         `version` integer not null,
         `body` varchar(255),
         `moment` datetime(6),
+        `tags` varchar(255),
         `title` varchar(255),
         `message_thread_id` integer not null,
+        `user_id` integer not null,
         primary key (`id`)
     ) engine=InnoDB;
 
@@ -284,6 +286,8 @@ create index IDXnr284tes3x8hnd3h716tmb3fr on `challenge` (`deadline`);
 
     alter table `descriptor_duty` 
        add constraint UK_kvr5rclgwa51d625rmx13ke96 unique (`duties_id`);
+create index IDX28ur9xm72oo1df9g14xhnh8h3 on `job` (`status`);
+create index IDXfdmpnr8o4phmk81sqsano16r on `job` (`deadline`);
 
     alter table `job` 
        add constraint UK_qpodqtu8nvqkof3olnqnqcv2l unique (`descriptor_id`);
@@ -376,6 +380,11 @@ create index IDXmly5kwrpgadjkxv5t5dgw36hr on `requests` (`deadline`);
        add constraint `FKn5adlx3oqjna7aupm8gwg3fuj` 
        foreign key (`message_thread_id`) 
        references `message_thread` (`id`);
+
+    alter table `message` 
+       add constraint `FK9o6wsmyyjow8oqtoxdp3iein9` 
+       foreign key (`user_id`) 
+       references `user_account` (`id`);
 
     alter table `message_thread_user_account` 
        add constraint `FKnbmip5t870fxbecafgaxvyde8` 
